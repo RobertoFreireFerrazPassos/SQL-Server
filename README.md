@@ -31,6 +31,15 @@ A filtered index is a nonclustered index with a predicate that allows you to spe
 
 Some usages: not deleted rows or not null value.
 
+#### Unique index
+
+- A unique index ensures the index key columns do not contain any duplicate values.
+- A unique index can be clustered or non-clustered.
+- A unique index may consist of one or many columns. If a unique index has one column, the values in this column will be unique. In case the unique index has multiple columns, the combination of values in these columns is unique.
+- Any attempt to insert or update data into the unique index key columns that causes the duplicate will result in an error.
+- If you create a unique index on a nullable column, you can only have only one NULL value in this column.
+- When you create a unique constraint, behind the scene, SQL Server creates a unique index associated with this constraint.
+
 # References:
 
 https://www.sqlservertutorial.net/sql-server-indexes/
