@@ -31,6 +31,10 @@ A filtered index is a nonclustered index with a predicate that allows you to spe
 
 Some usages: not deleted rows or not null value.
 
+##### Indexes on Computed Columns
+
+Simulate function-based indexes in SQL Server using indexes on computed columns.
+
 #### Unique index
 
 - A unique index ensures the index key columns do not contain any duplicate values.
