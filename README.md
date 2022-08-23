@@ -46,5 +46,5 @@ Simulate function-based indexes in SQL Server using indexes on computed columns.
 
 # References:
 
-https://www.sqlservertutorial.net/sql-server-indexes/
+https://www.sqlservertutorial.net/
 
