@@ -32,6 +32,26 @@ Durability – requires that committed data must be stored using method that wil
 <summary style="font-size:14px">Locking</summary>
 <p>
 
+```sql
+-- Block by not commiting Transaction 1
+
+BEGIN TRAN;
+
+UPDATE FRUITS
+SET FruitName = 'Apple - Transaction 1'
+WHERE Id = 1;
+
+-- second query
+
+BEGIN TRAN;
+
+UPDATE FRUITS
+SET FruitName = 'Apple - Transaction 2'
+WHERE Id = 1;
+
+COMMIT;
+```
+
 </p></details>
 
 <details>
@@ -95,4 +115,9 @@ Simulate function-based indexes in SQL Server using indexes on computed columns.
 https://www.sqlservertutorial.net/
 
 https://www.sqlshack.com/pagination-in-sql-server/
+
+https://www.sqlshack.com/locking-sql-server/
+
+https://www.sqlservertutorial.net/sql-server-administration/sql-server-blocking/
+
 

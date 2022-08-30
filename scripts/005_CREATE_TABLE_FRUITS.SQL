@@ -40,3 +40,21 @@ SELECT * FROM FRUITS
 ORDER BY FruitName 
 OFFSET (@PageNumber-1)*@RowsOfPage ROWS
 FETCH NEXT @RowsOfPage ROWS ONLY
+
+-- Block by not commiting Transaction 1
+
+BEGIN TRAN;
+
+UPDATE FRUITS
+SET FruitName = 'Apple - Transaction 1'
+WHERE Id = 1;
+
+-- second query
+
+BEGIN TRAN;
+
+UPDATE FRUITS
+SET FruitName = 'Apple - Transaction 2'
+WHERE Id = 1;
+
+COMMIT;
