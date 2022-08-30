@@ -1,7 +1,7 @@
 -- =============================================
 -- Author:      Passos, Roberto
 -- Create Date: 08/22/2022
--- Description: Create Table PRODUCT 
+-- Description: Create Table ORDER_PRODUCT 
 -- =============================================
 
 DROP TABLE IF EXISTS ORDER_PRODUCT

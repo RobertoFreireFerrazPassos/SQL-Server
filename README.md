@@ -2,12 +2,7 @@
 
 ## Next Steps
 
-- Add Pagination
-
-https://www.sqlshack.com/pagination-in-sql-server/
-
 - Add row lock in Sql server
-
 
 ## Set up project
 
@@ -56,4 +51,6 @@ Simulate function-based indexes in SQL Server using indexes on computed columns.
 # References:
 
 https://www.sqlservertutorial.net/
+
+https://www.sqlshack.com/pagination-in-sql-server/
 

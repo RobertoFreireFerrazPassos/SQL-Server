@@ -1,7 +1,7 @@
 -- =============================================
 -- Author:      Passos, Roberto
 -- Create Date: 08/28/2021
--- Description: Create Table Gender
+-- Description: Create Table UR_GENDER
 -- =============================================
 
 CREATE TABLE UR_GENDER (

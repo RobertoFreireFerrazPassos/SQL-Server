@@ -1,7 +1,7 @@
 -- =============================================
 -- Author:      Passos, Roberto
 -- Create Date: 08/28/2021
--- Description: Create Table User 
+-- Description: Create Table UR_USER 
 -- =============================================
 
 DROP TABLE IF EXISTS UR_USER
@@ -51,6 +51,7 @@ ADD
             0, 
             CHARINDEX('@', email, 0)
         );
+GO
 
 CREATE INDEX ix_user_email_local_part
 ON UR_USER(email_local_part);
