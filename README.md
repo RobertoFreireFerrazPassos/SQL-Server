@@ -14,7 +14,9 @@ https://www.sqlshack.com/locking-sql-server/
 
 ## Project
 
-### ACID 
+<details>
+<summary style="font-size:14px">ACID</summary>
+<p>
 
 Atomicity – requires that a transaction that involves two or more discrete parts of information must commit all parts or none.
 
@@ -24,9 +26,17 @@ Isolation – requires that a transaction that is still running and did not comm
 
 Durability – requires that committed data must be stored using method that will preserve all data in correct state and available to a user, even in case of a failure.
 
-### Locking
+</p></details>
 
-### Pagination
+<details>
+<summary style="font-size:14px">Locking</summary>
+<p>
+
+</p></details>
+
+<details>
+<summary style="font-size:14px">Pagination</summary>
+<p>
 
 ```sql
 DECLARE @PageNumber AS INT
@@ -39,7 +49,11 @@ OFFSET (@PageNumber-1)*@RowsOfPage ROWS
 FETCH NEXT @RowsOfPage ROWS ONLY
 ```
 
-### Indexes
+</p></details>
+
+<details>
+<summary style="font-size:14px">Indexes</summary>
+<p>
 
 #### Clustered Indexes
 
@@ -73,6 +87,8 @@ Simulate function-based indexes in SQL Server using indexes on computed columns.
 - Any attempt to insert or update data into the unique index key columns that causes the duplicate will result in an error.
 - If you create a unique index on a nullable column, you can only have only one NULL value in this column.
 - When you create a unique constraint, behind the scene, SQL Server creates a unique index associated with this constraint.
+
+</p></details>
 
 # References:
 
