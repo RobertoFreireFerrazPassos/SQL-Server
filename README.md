@@ -2,9 +2,7 @@
 
 ## Next Steps
 
-- Add row lock in Sql server
-
-https://www.sqlshack.com/locking-sql-server/
+- Complete lock topic
 
 ## Set up project
 
