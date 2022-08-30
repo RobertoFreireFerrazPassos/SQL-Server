@@ -4,6 +4,8 @@
 
 - Add row lock in Sql server
 
+https://www.sqlshack.com/locking-sql-server/
+
 ## Set up project
 
 - docker-compose up in /docker folder
@@ -12,6 +14,30 @@
 
 ## Project
 
+### ACID 
+
+Atomicity – requires that a transaction that involves two or more discrete parts of information must commit all parts or none.
+
+Consistency – requires that a transaction must create a valid state of new data, or it must roll back all data to the state that existed before the transaction was executed.
+
+Isolation – requires that a transaction that is still running and did not commit all data yet, must stay isolated from all other transactions.
+
+Durability – requires that committed data must be stored using method that will preserve all data in correct state and available to a user, even in case of a failure.
+
+### Locking
+
+### Pagination
+
+```sql
+DECLARE @PageNumber AS INT
+DECLARE @RowsOfPage AS INT
+SET @PageNumber=2
+SET @RowsOfPage=4
+SELECT * FROM FRUITS
+ORDER BY FruitName 
+OFFSET (@PageNumber-1)*@RowsOfPage ROWS
+FETCH NEXT @RowsOfPage ROWS ONLY
+```
 
 ### Indexes
 
