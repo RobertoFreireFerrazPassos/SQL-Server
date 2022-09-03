@@ -50,6 +50,10 @@ WHERE Id = 1;
 COMMIT;
 ```
 
+Explain deadlock and how to solve it
+
+https://www.sqlshack.com/how-to-resolve-deadlocks-in-sql-server/
+
 </p></details>
 
 <details>
