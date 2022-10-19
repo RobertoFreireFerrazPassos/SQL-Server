@@ -4,6 +4,7 @@
 -- number of all call outcomes related to each city. Therefore, all 
 -- outcomes (all values from the dictionary) shall be columns in our 
 -- report.
+-- https://www.sqlshack.com/learn-sql-sql-server-pivot-tables/
 -- =============================================
 
 
